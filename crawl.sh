@@ -29,15 +29,16 @@ CIDs=(
 ["森中花咲"]="UCtpB6Bvhs1Um93ziEDACQ8g"
 )
 
+＃quota制限を回避するため時間帯によってキーの入れ替えを行っておりました
 return_apikey () {
 now_hour=$(date +%k)
 
 if [ $now_hour -ge 0 -a $now_hour -le 7 ] ;then
-  echo "AIzaSyAlFqdEc4x0AUBjdC6tBMcF3yq3t5hLBdc"
+  echo ""
 elif [ $now_hour -ge 8 -a $now_hour -le 15 ] ;then
-  echo "AIzaSyBxoo5CS7tkCZPOKNK5o2dC7g1FnWznHZ0"
+  echo ""
   else
-    echo "AIzaSyBzs7sNWJuHjVVN_jqS4ikPzraPt5kCKqw"
+    echo ""
 fi
 }
 
